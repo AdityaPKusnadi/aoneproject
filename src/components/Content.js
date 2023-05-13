@@ -5,7 +5,7 @@ import User from './User';
 
 function Content() {
     return (
-      <main className="flex-1 p-4">
+      <main className="flex-1 p-4 ml-auto w-4/5">
         <h2 className="text-2xl font-medium mb-4">Content</h2>
         <Switch>
           <Route path="/about" component={About} />

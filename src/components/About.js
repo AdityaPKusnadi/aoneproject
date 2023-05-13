@@ -1,5 +1,5 @@
 function About() {
-    return (<div className="flex flex-col w-full">
+    return (<div className="flex flex-col ml-auto w-4/5">
     <h2 className="text-2xl font-medium mb-4">About</h2>
     <div className="overflow-x-auto">
         <h3 className="text-lg font-medium mb-2">About</h3>

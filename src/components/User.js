@@ -20,7 +20,7 @@ const users = [
 
 function User() {
   return (
-    <div className="flex flex-col w-full">
+    <div className="flex flex-col ml-auto w-4/5">
       <h2 className="text-2xl font-medium mb-4">User List</h2>
       <div className="overflow-x-auto">
         <table className="w-full whitespace-nowrap">
