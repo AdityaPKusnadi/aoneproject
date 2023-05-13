@@ -1,24 +1,29 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from 'react';
+import { Switch, Route } from 'react-router-dom';
+import About from './components/About';
+import User from './components/User';
+import Sidebar from './components/Sidebar';
+import Header from './components/Header';
 
 function App() {
+  const [activeMenu, setActiveMenu] = useState('User');
+
+  const handleMenuClick = (menu) => {
+    setActiveMenu(menu);
+    console.log(menu);
+  }
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+      <div className="flex flex-col h-screen overflow-hidden">
+        <Header/>
+        <div className="flex flex-1 overflow-hidden">
+          <Sidebar activeMenu={activeMenu} handleMenuClick={handleMenuClick} />
+          <Switch>
+            <Route path="/about" component={About} />
+            <Route path="/user" component={User} />
+          </Switch>
+        </div>
+      </div>
   );
 }
 
