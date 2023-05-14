@@ -15,7 +15,7 @@ function App() {
 
   return (
       <div className="flex flex-col h-screen overflow-hidden">
-        <Header/>
+        <Header activeMenu={activeMenu}/>
         <div className="flex flex-1 overflow-hidden">
           <Sidebar activeMenu={activeMenu} handleMenuClick={handleMenuClick} />
           <Switch>

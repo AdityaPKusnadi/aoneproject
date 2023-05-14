@@ -1,9 +1,18 @@
 import React from 'react';
 
-function Header() {
+function Header(props) {
+  const { activeMenu } = props;
+
+  let title = "";
+  if (activeMenu === "about") {
+    title = "About";
+  } else if (activeMenu === "user") {
+    title = "User";
+  }
+
   return (
     <header className="ml-auto w-4/5 flex items-center justify-between px-6 py-4 bg-[#f7f8fc] border-b border-[#f7f8fc]">
-      <h1 className="text-xl font-medium">My App</h1>
+      <h1 className="text-[24px] font-medium">{title}</h1>
       <div className="flex items-center space-x-4">
       <p className="text-[#252732] font-medium">
         John Doe

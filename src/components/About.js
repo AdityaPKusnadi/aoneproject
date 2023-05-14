@@ -1,38 +1,26 @@
 function About() {
-    return (<div className="flex flex-col ml-auto w-4/5">
-    <h2 className="text-2xl font-medium mb-4">About</h2>
-    <div className="overflow-x-auto">
-        <h3 className="text-lg font-medium mb-2">About</h3>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed auctor
-          sapien vel felis faucibus, nec ullamcorper mauris eleifend. Nulla
-          vel velit eu mauris convallis iaculis. Proin pellentesque, dolor
-          vel malesuada aliquam, sem augue semper augue, vel ullamcorper enim
-          nulla a arcu. Suspendisse potenti.
-        </p>
-        <p>
-          Vestibulum sit amet eleifend justo. In facilisis enim non nulla
-          ultricies, at semper tortor iaculis. Nulla facilisi. In dapibus
-          libero at velit egestas volutpat. Suspendisse potenti. Sed
-          dignissim lorem quis ex malesuada, sit amet pharetra ipsum
-          hendrerit. Vestibulum ante ipsum primis in faucibus orci luctus et
-          ultrices posuere cubilia curae; Sed a augue aliquet, placerat elit
-          id, ornare purus. Proin quis ex in nulla rutrum consequat id vel
-          velit.
-        </p>
-        <p>
-          Aliquam euismod ex quis lorem volutpat aliquam. Nulla facilisi. In
-          hac habitasse platea dictumst. Maecenas eget mi commodo, imperdiet
-          quam at, pharetra nisl. Duis at massa eu velit dapibus faucibus ac
-          sit amet arcu. In bibendum neque quam, at ultricies libero lacinia
-          eget. Integer lobortis, libero vel tincidunt feugiat, purus sem
-          tincidunt velit, sit amet pretium lorem lectus a elit. Vivamus a
-          facilisis odio. Donec in libero quis tortor semper semper ac ut
-          eros. Sed gravida commodo luctus. Duis scelerisque eleifend augue,
-          eget eleifend mi dignissim eu. Vivamus non neque eu elit finibus
-          lacinia.
-        </p>
-      </div>
+    return (<div className="flex flex-col ml-auto w-4/5 bg-[#f7f8fc]">
+   <div class="flex justify-center items-center">
+  <div class="w-1/2 mr-6">
+    <div class="w-524 h-351 bg-[#f7f8fc] rounded-lg p-6">
+      <p class="font-medium text-black text-lg leading-8 tracking-0.2">
+        Lorem ipsum dolor sit amet
+      </p>
+      <p class="text-black leading-8 tracking-0.2">
+        consectetur adipiscing elit. Nulla vel turpis turpis. Sed mauris mauris, aliquam sed ante ut, ullamcorper laoreet erat. Duis eu rutrum purus. Ut luctus bibendum tellus ut congue. Ut dolor nisi, maximus aliquam nulla sed, venenatis consequat arcu. Nulla hendrerit vehicula arcu. In consectetur, purus sed consequat posuere, orci nunc consequat ipsum, ut sodales urna massa at neque.<br></br><br></br> Nulla eget tellus sodales, venenatis lacus eget, lobortis libero. Cras scelerisque metus non mi condimentum, ac lacinia enim fermentum. Sed arcu tortor, hendrerit a eros ac, eleifend porta enim. Suspendisse molestie enim quam, a maximus massa faucibus nec. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Integer tortor odio, iaculis eget lobortis iaculis, tempor nec ante. Aliquam venenatis nisl at ipsum commod
+      </p>
+    </div>
+  </div>
+  <div class="w-1/2">
+    <div class="w-487 h-344 bg-[#f7f8fc] rounded-lg">
+      <img src="https://picsum.photos/487/344" alt="Sample Image" class="object-cover rounded-lg" />
+    </div>
+  </div>
+</div>
+
+
+
+
       </div>
     );
   }
