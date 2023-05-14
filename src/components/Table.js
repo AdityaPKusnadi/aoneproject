@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from 'react-router-dom';
 
 function Table({ data, pageSize = 4 }) {
   const [currentPage, setCurrentPage] = useState(1);
@@ -51,9 +52,11 @@ function Table({ data, pageSize = 4 }) {
                 </td>
                 <td className="border-b border-[#DFE0EB] py-[36px]">
                   <div className="w-[116px] h-[40px] rounded-full bg-[#65A7DB] flex justify-center items-center">
+                  <Link to="/detail">
                     <button className="text-white font-medium">
                       VIEW DETAIL
                     </button>
+                    </Link>
                   </div>
                 </td>
               </tr>

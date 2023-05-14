@@ -4,13 +4,13 @@ import About from './components/About';
 import User from './components/User';
 import Sidebar from './components/Sidebar';
 import Header from './components/Header';
+import Detail from './components/Detail';
 
 function App() {
   const [activeMenu, setActiveMenu] = useState('User');
 
   const handleMenuClick = (menu) => {
     setActiveMenu(menu);
-    console.log(menu);
   }
 
   return (
@@ -21,6 +21,7 @@ function App() {
           <Switch>
             <Route path="/about" component={About} />
             <Route path="/user" component={User} />
+            <Route path="/detail" component={Detail} />
           </Switch>
         </div>
       </div>
