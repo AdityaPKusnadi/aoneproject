@@ -13,7 +13,7 @@ function About() {
   </div>
   <div class="w-1/2">
     <div class="w-487 h-344 bg-[#f7f8fc] rounded-lg">
-      <img src="https://picsum.photos/487/344" alt="Sample Image" class="object-cover rounded-lg" />
+      <img src="https://fastly.picsum.photos/id/22/487/344.jpg?hmac=OaUDhaGdQxAtgX7V6Yrx64-7Ph3D9EOiM0sb_s1RRxg" alt="Sample Image" class="object-cover rounded-lg" />
     </div>
   </div>
 </div>

@@ -38,13 +38,13 @@ function Table({ data, pageSize = 4 }) {
                 <td className="border-b border-[#DFE0EB] py-[36px]">
                   <div className="flex items-center">
                     <img
-                      src={user.image}
-                      alt={`Avatar for ${user.name}`}
+                      src={user.avatar}
+                      alt={`Avatar for ${user.first_name+' '+user.last_name}`}
                       className="rounded-full ml-[32px] mr-[36px]"
                       width="44"
                       height="44"
                     />
-                    <span className="text-base">{user.name}</span>
+                    <span className="text-base">{user.first_name+' '+user.last_name}</span>
                   </div>
                 </td>
                 <td className="border-b border-[#DFE0EB] py-[36px]">
@@ -52,11 +52,11 @@ function Table({ data, pageSize = 4 }) {
                 </td>
                 <td className="border-b border-[#DFE0EB] py-[36px]">
                   <div className="w-[116px] h-[40px] rounded-full bg-[#65A7DB] flex justify-center items-center">
-                  <Link to="/detail">
-                    <button className="text-white font-medium">
-                      VIEW DETAIL
-                    </button>
-                    </Link>
+                  <Link to={`/detail/${user.id}`}>
+                  <button className="text-white font-medium">
+                    VIEW DETAIL
+                  </button>
+                </Link>
                   </div>
                 </td>
               </tr>

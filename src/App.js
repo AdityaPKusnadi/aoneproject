@@ -19,9 +19,10 @@ function App() {
         <div className="flex flex-1 overflow-hidden">
           <Sidebar activeMenu={activeMenu} handleMenuClick={handleMenuClick} />
           <Switch>
+            <Route exact path="/" component={About} />
             <Route path="/about" component={About} />
             <Route path="/user" component={User} />
-            <Route path="/detail" component={Detail} />
+            <Route path="/detail/:id" component={Detail} />
           </Switch>
         </div>
       </div>
