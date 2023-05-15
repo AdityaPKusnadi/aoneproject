@@ -5,7 +5,7 @@ function Detail() {
   const { id } = useParams();
   const [user, setUser] = useState(null);
   useEffect(() => {
-    fetch(`http://aonebackend.test/users/${id}`)
+    fetch(`https://apk-project.my.id/aonebackend/users/${id}`)
       .then((response) => response.json())
       .then((data) => setUser(data.data.users[0]))
       .catch((error) => console.error(error));

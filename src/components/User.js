@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import Table from "./Table";
 function User() {
   const [users, setUsers] = useState([]);
-  const apiUrl = 'http://aonebackend.test/users/';
+  const apiUrl = 'https://apk-project.my.id/aonebackend/users/';
 
   useEffect(() => {
     // Mengambil data dari API menggunakan fetch
